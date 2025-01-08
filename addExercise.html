@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Exercise</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("WhatsApp Image 2025-01-08 at 14.48.51_70170a0b.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.7); /* Add slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: #1e1e1e; /* Slightly lighter dark for cards */
+            color: white;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Slight lift on hover */
+        }
+
+        .card span {
+            font-size: 14px;
+            color: #b3b3b3; /* Lighter gray for subtext */
+        }
+
+        .arrow {
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+        /* Footer Navigation */
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 400px;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .nav-item span {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .nav-item.active {
+            color: #3ac569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Add exercise</h1>
+
+        <div class="card">
+            <div>
+                <div>All exercises</div>
+                <span>List all exercises</span>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div>By muscle group target</div>
+                <span>List all exercises</span>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div>By equipment</div>
+                <span>List all exercises</span>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div>Bodyweight only</div>
+                <span>Your custom exercises</span>
+            </div>
+            <div class="arrow">➔</div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="nav-item">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                Workout
+                <span>🏋️</span>
+            </a>
+        </div>
+        <div class="nav-item active">
+            <a href="addExercise.html" style="text-decoration: none; color: #3ac569;">
+                Add Exercise
+                <span>➕</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="progress.html" style="text-decoration: none; color: white;">
+                Progress
+                <span>📊</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .section {
+            background-color: #1c1c1e;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 14px;
+            color: #a6a6a6;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .stats div {
+            text-align: center;
+        }
+
+        .stats div p {
+            font-size: 12px;
+            color: #a6a6a6;
+        }
+
+        .weekdays {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .weekdays div {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #3a3a3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #a6a6a6;
+        }
+
+        .weekdays div.active {
+            background-color: #1db954;
+            color: white;
+        }
+
+        .all-time .icon {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .all-time .icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #1db954;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 400px;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .nav-item span {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .nav-item.active {
+            color: #3ac569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Weekly Section -->
+        <div class="section">
+            <h2>Week 24</h2>
+            <p>Stats for this week so far</p>
+            <div class="stats">
+                <div>
+                    <h3>0.0 lb</h3>
+                    <p>Mass moved</p>
+                </div>
+                <div>
+                    <h3>0:00 h</h3>
+                    <p>Duration</p>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>S</div>
+                <div>M</div>
+                <div>T</div>
+                <div>W</div>
+                <div>T</div>
+                <div>F</div>
+                <div>S</div>
+            </div>
+        </div>
+
+        <!-- All-Time Section -->
+        <div class="section all-time">
+            <div class="icon">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" stroke="#1db954" stroke-width="3" fill="none"></circle>
+                </svg>
+            </div>
+            <h2>All time</h2>
+            <p>Your cumulative stats since you started using S2</p>
+            <div class="stats">
+                <div>
+                    <h3>0.0 lb</h3>
+                    <p>Mass moved</p>
+                </div>
+                <div>
+                    <h3>0:00 h</h3>
+                    <p>Workout duration</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <div class="nav-item">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                Workout
+                <span>🏋️</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="addExercise.html" style="text-decoration: none; color: white;">
+                Add Exercise
+                <span>➕</span>
+            </a>
+        </div>
+        <div class="nav-item active">
+            <a href="progress.html" style="text-decoration: none; color: #3ac569;">
+                Progress
+                <span>📊</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
